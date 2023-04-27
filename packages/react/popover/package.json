@@ -2,7 +2,10 @@
   "name": "@roui/popover",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
