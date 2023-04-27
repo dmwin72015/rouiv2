@@ -1,0 +1,31 @@
+.Popper-arrow {
+  &::before {
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 0;
+    width: 16px;
+    height: 8px;
+    background: var(--antd-arrow-background-color);
+    clip-path: polygon(
+      1.6568542494923806px 100%,
+      50% 1.6568542494923806px,
+      14.34314575050762px 100%,
+      1.6568542494923806px 100%
+    );
+    content: "";
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8.970562748477143px;
+    height: 8.970562748477143px;
+    bottom: 0;
+    inset-inline: 0;
+    margin: auto;
+    border-radius: 0 0 2px 0;
+    transform: translateY(50%) rotate(-135deg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+    z-index: 0;
+    background: 0 0;
+  }
+}

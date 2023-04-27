@@ -1,0 +1,49 @@
+{
+  "name": "radix-demo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/react/**/*"
+  ],
+  "scripts": {
+    "dev": "npm run storybook",
+    "storybook": "storybook dev -p 6601",
+    "build-storybook": "storybook build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-transform-typescript": "^7.21.3",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.4",
+    "@babel/runtime": "^7.21.0",
+    "@storybook/addon-essentials": "^7.0.6",
+    "@storybook/addon-interactions": "^7.0.6",
+    "@storybook/addon-links": "^7.0.6",
+    "@storybook/addon-styling": "^1.0.2",
+    "@storybook/blocks": "^7.0.6",
+    "@storybook/react": "^7.0.6",
+    "@storybook/react-webpack5": "^7.0.6",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-loader": "^7.2.4",
+    "prop-types": "^15.8.1",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
+    "storybook": "^7.0.7",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=14.18.0"
+  }
+}
