@@ -173,9 +173,6 @@ importers:
 
   packages/react/lock-scroll:
     dependencies:
-      '@types/react':
-        specifier: ^18.0
-        version: 18.2.7
       react:
         specifier: ^18.0
         version: 18.2.0

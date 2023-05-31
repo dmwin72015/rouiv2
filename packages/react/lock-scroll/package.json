@@ -15,7 +15,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "@types/react": "^18.0",
     "react": "^18.0"
   }
 }
