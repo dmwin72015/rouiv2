@@ -83,5 +83,10 @@ export type PortalProps = React.ComponentPropsWithoutRef<
   typeof PortalPrimitive
 >;
 
+export interface DialogPortalProps extends Omit<PortalProps, "asChild"> {
+  children?: React.ReactNode;
+  forceMount?: true;
+}
+
 //
 export { Scope };

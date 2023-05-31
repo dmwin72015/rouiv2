@@ -3,7 +3,7 @@ import { useState } from "react";
 import Dialog from "../src/Root";
 import "./demo.scss";
 
-import DialogDemo from "../src/origin/Dialog";
+import DialogDemo from "./Dialog";
 
 const meta = {
   title: "Dialog",

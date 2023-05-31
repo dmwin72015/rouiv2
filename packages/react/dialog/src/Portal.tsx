@@ -5,7 +5,7 @@ import { useScrollLocker } from "@roui/lock-scroll";
 import type {
   ScopedProps,
   PortalContextValue,
-  PortalProps,
+  DialogPortalProps,
   PresenceGroupContextValue,
   Scope,
 } from "./interface";
@@ -27,17 +27,13 @@ const [PresenceProvider, usePresenceContext] =
     count: 0,
   });
 
-interface DialogPortalProps extends Omit<PortalProps, "asChild"> {
-  children?: React.ReactNode;
-  forceMount?: true;
-}
-
 const PresenceGroup: React.FC<any> = (
   props: ScopedProps<DialogPortalProps>
 ) => {
   const { open } = useDialogContext(DialogPresenceName, props.__scopeDialog);
   const [count, setCount] = React.useState<number>(0);
   const _open = open || (!open && count > 0);
+
   useScrollLocker(_open);
 
   return (

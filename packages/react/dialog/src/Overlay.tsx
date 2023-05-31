@@ -1,7 +1,5 @@
 import React from "react";
-import { RemoveScroll } from "react-remove-scroll";
 import { Primitive } from "@radix-ui/react-primitive";
-import { Slot } from "@radix-ui/react-slot";
 import { Presence } from "@radix-ui/react-presence";
 import { DialogOverlayName, getState } from "./context";
 import { usePortalContext } from "./Portal";
@@ -25,14 +23,12 @@ const DialogOverlayImpl = React.forwardRef<
   usePresenceSub(DialogOverlayName, __scopeDialog);
 
   return (
-    <RemoveScroll as={Slot} allowPinchZoom shards={[context.contentRef!]}>
-      <Primitive.div
-        data-state={getState(context.open)}
-        {...overlayProps}
-        ref={forwardedRef}
-        style={{ pointerEvents: "auto", ...overlayProps.style }}
-      />
-    </RemoveScroll>
+    <Primitive.div
+      data-state={getState(context.open)}
+      {...overlayProps}
+      ref={forwardedRef}
+      style={{ pointerEvents: "auto", ...overlayProps.style }}
+    />
   );
 });
 

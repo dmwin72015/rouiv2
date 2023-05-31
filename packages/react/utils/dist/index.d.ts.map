@@ -1,0 +1,1 @@
+{"mappings":"AAAA,qCAMC","sources":["packages/react/utils/src/packages/react/utils/src/canUseDom.ts","packages/react/utils/src/packages/react/utils/src/index.ts","packages/react/utils/src/index.ts"],"sourcesContent":[null,null,"export { default as canUseDom } from \"./canUseDom\";\n"],"names":[],"version":3,"file":"index.d.ts.map"}

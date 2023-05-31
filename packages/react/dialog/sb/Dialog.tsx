@@ -1,8 +1,8 @@
 import React from "react";
-import Dialog from "../Root";
-import DialogPortal from "../Portal";
-import DialogContent from "../Content";
-import DialogOverlay from "../Overlay";
+import Dialog from "../src/Root";
+import DialogPortal from "../src/Portal";
+import DialogContent from "../src/Content";
+import DialogOverlay from "../src/Overlay";
 
 const DialogDemo = () => {
   const [open, setOpen] = React.useState<boolean>(false);
@@ -15,7 +15,7 @@ const DialogDemo = () => {
       >
         显示2
       </button>
-      <div style={{ height: 3000 }}></div>
+      <div className="h-[1200px] bg-red-400"></div>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogPortal className="roui-dialog">
           <DialogOverlay className="fixed inset-0 bg-black/50 z-[1000] fade roui-overlay" />

@@ -1,14 +1,14 @@
 {
   "name": "@roui/dialog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@radix-ui/primitive": "^1.0.0",
     "@radix-ui/react-compose-refs": "^1.0.0",
@@ -25,8 +25,10 @@
     "@radix-ui/react-use-callback-ref": "^1.0.0",
     "@radix-ui/react-use-controllable-state": "^1.0.0",
     "@radix-ui/react-use-layout-effect": "^1.0.0",
-    "@roui/lock-scroll": "workspace:^",
-    "aria-hidden": "^1.2.3",
-    "react-remove-scroll": "^2.5.6"
+    "@roui/lock-scroll": "workspace:^"
+  },
+  "peerDependencies": {
+    "react": "^18.0",
+    "react-dom": "^18.0"
   }
 }
