@@ -4,7 +4,6 @@
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
-    "baseUrl": ".",
     "declaration": true,
     "emitDecoratorMetadata": false,
     "esModuleInterop": true,
@@ -32,6 +31,7 @@
     "strictPropertyInitialization": true,
     "stripInternal": true,
     "target": "es2018",
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": "."
   }
 }

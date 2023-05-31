@@ -1,0 +1,20 @@
+{
+  "name": "@roui/lock-scroll",
+  "version": "1.0.0",
+  "description": "react lock body scroll lib",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {},
+  "peerDependencies": {
+    "@types/react": "*",
+    "react": "^18.0"
+  }
+}

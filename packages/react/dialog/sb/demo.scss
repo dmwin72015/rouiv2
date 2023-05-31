@@ -1,0 +1,48 @@
+.fade {
+  &[data-state="open"] {
+    animation-name: fade-in;
+  }
+  &[data-state="closed"] {
+    animation-name: fade-out;
+  }
+  animation-duration: var(--dialog-duration, 0.25s);
+  animation-timing-function: cubic-bezier(0.2, 0.42, 0.3, 1);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+  }
+}
+
+//
+.slide {
+  &[data-state="open"] {
+    animation-name: slide-in;
+  }
+  &[data-state="closed"] {
+    animation-name: slide-out;
+  }
+  animation-duration: var(--dialog-duration, 0.25s);
+  animation-timing-function: cubic-bezier(0.2, 0.42, 0.3, 1);
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out {
+  100% {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+}

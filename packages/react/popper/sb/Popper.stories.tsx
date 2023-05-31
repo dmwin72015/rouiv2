@@ -30,7 +30,6 @@ export const ControllDemo = (props: any) => {
         >
           <PopperAnchor>
             <button
-              // ref={refs.setReference}
               onPointerDown={() => setOpen(true)}
               className="bg-blue-500 text-white text-sm py-0.5 px-2"
             >
@@ -38,16 +37,20 @@ export const ControllDemo = (props: any) => {
             </button>
           </PopperAnchor>
         </div>
-        <PopperContent
-          sideOffset={5}
-          onPlaced={onRender}
-          style={{
-            zIndex: 1000,
-          }}
-        >
-          <PopperArrow></PopperArrow>
-          我动画设计的撒的撒
-        </PopperContent>
+        <Portal>
+          <PopperContent
+            sideOffset={5}
+            onPlaced={onRender}
+            style={{
+              zIndex: 1000,
+            }}
+          >
+            <PopperArrow></PopperArrow>
+            <div className="p-2 shadow-md rounded text-sm">
+              我动画设计的撒的撒
+            </div>
+          </PopperContent>
+        </Portal>
       </Popper>
       {/* <PopperContent></PopperContent> */}
     </div>
