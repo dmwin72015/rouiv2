@@ -1,11 +1,11 @@
-import * as React from "react";
-import type * as Radix from "@radix-ui/react-primitive";
-import { DismissableLayer } from "@radix-ui/react-dismissable-layer";
-import { FocusScope } from "@radix-ui/react-focus-scope";
-import { Primitive } from "@radix-ui/react-primitive";
-import { Portal as PortalPrimitive } from "@radix-ui/react-portal";
+import * as React from 'react';
+import type * as Radix from '@radix-ui/react-primitive';
+import { DismissableLayer } from '@radix-ui/react-dismissable-layer';
+import { FocusScope } from '@radix-ui/react-focus-scope';
+import { Primitive } from '@radix-ui/react-primitive';
+import { Portal as PortalPrimitive } from '@radix-ui/react-portal';
 
-import type { Scope } from "@radix-ui/react-context";
+import type { Scope } from '@radix-ui/react-context';
 
 export type ScopedProps<P> = P & { __scopeDialog?: Scope };
 
@@ -37,7 +37,7 @@ export interface DialogProps {
 export type PresenceGroupContextValue = {
   onSub?(): void;
   onUnSub?(): void;
-  count: number;
+  count?: number;
 };
 
 /* Overlay */
@@ -51,15 +51,15 @@ export interface DialogOverlayProps extends DialogOverlayImplProps {
 
 /*Content */
 export interface DialogContentImplProps
-  extends Omit<DismissableLayerProps, "onDismiss"> {
-  trapFocus?: FocusScopeProps["trapped"];
-  onOpenAutoFocus?: FocusScopeProps["onMountAutoFocus"];
-  onCloseAutoFocus?: FocusScopeProps["onUnmountAutoFocus"];
+  extends Omit<DismissableLayerProps, 'onDismiss'> {
+  trapFocus?: FocusScopeProps['trapped'];
+  onOpenAutoFocus?: FocusScopeProps['onMountAutoFocus'];
+  onCloseAutoFocus?: FocusScopeProps['onUnmountAutoFocus'];
 }
 export interface DialogContentTypeProps
   extends Omit<
     DialogContentImplProps,
-    "trapFocus" | "disableOutsidePointerEvents"
+    'trapFocus' | 'disableOutsidePointerEvents'
   > {}
 
 export type DialogContentImplElement = React.ElementRef<
@@ -83,7 +83,7 @@ export type PortalProps = React.ComponentPropsWithoutRef<
   typeof PortalPrimitive
 >;
 
-export interface DialogPortalProps extends Omit<PortalProps, "asChild"> {
+export interface DialogPortalProps extends Omit<PortalProps, 'asChild'> {
   children?: React.ReactNode;
   forceMount?: true;
 }

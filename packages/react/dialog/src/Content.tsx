@@ -1,10 +1,10 @@
-import * as React from "react";
-import { composeEventHandlers } from "@radix-ui/primitive";
-import { useComposedRefs } from "@radix-ui/react-compose-refs";
-import { DismissableLayer } from "@radix-ui/react-dismissable-layer";
-import { FocusScope } from "@radix-ui/react-focus-scope";
-import { Presence } from "@radix-ui/react-presence";
-import { useFocusGuards } from "@radix-ui/react-focus-guards";
+import * as React from 'react';
+import { composeEventHandlers } from '@radix-ui/primitive';
+import { useComposedRefs } from '@radix-ui/react-compose-refs';
+import { DismissableLayer } from '@radix-ui/react-dismissable-layer';
+import { FocusScope } from '@radix-ui/react-focus-scope';
+import { Presence } from '@radix-ui/react-presence';
+import { useFocusGuards } from '@radix-ui/react-focus-guards';
 
 import type {
   ScopedProps,
@@ -12,11 +12,11 @@ import type {
   DialogContentElement,
   DialogContentTypeElement,
   DialogContentTypeProps,
-} from "./interface";
-import { DialogContentName, getState } from "./context";
+} from './interface';
+import { DialogContentName, getState } from './context';
 
-import { usePortalContext, usePresenceSub } from "./Portal";
-import { useDialogContext } from "./Root";
+import { usePortalContext, usePresenceSub } from './Portal';
+import { useDialogContext } from './Root';
 
 const DialogContentModal = React.forwardRef<
   DialogContentTypeElement,

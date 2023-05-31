@@ -10,8 +10,10 @@
   "scripts": {
     "dev": "npm run storybook",
     "storybook": "storybook dev -p 6601",
+    "types:check": "tsc --skipLibCheck --noEmit",
     "build-storybook": "storybook build",
-    "build": "parcel build 'packages/react/*' --no-cache"
+    "build:packages": "parcel build 'packages/react/*' --no-cache",
+    "build": "pnpm build:packages"
   },
   "author": "",
   "license": "ISC",
@@ -41,10 +43,11 @@
     "@storybook/react": "^7.0.17",
     "@storybook/react-webpack5": "^7.0.17",
     "@storybook/testing-library": "^0.1.0",
+    "@types/node": "^20.2.5",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
     "autoprefixer": "^10.4.14",
-    "parcel": "^2.8.3",
+    "parcel": "^2.9.1",
     "postcss": "^8.4.23",
     "postcss-loader": "^7.2.4",
     "prop-types": "^15.8.1",
@@ -57,5 +60,5 @@
   "engines": {
     "node": ">=14.18.0"
   },
-  "browserslist": "> 0.25%, not dead"
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }

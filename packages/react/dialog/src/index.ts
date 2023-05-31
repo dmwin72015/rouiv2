@@ -15,6 +15,7 @@ export {
   DialogPortal,
   DialogContent,
   DialogOverlay,
+  Dialog as Root,
   DialogPortal as Portal,
   DialogContent as Content,
   DialogOverlay as Overlay,

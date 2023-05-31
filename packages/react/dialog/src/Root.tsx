@@ -1,18 +1,18 @@
-import React from "react";
-import { useId } from "@radix-ui/react-id";
-import { useControllableState } from "@radix-ui/react-use-controllable-state";
-import { DialogName, createDialogContext } from "./context";
+import React from 'react';
+import { useId } from '@radix-ui/react-id';
+import { useControllableState } from '@radix-ui/react-use-controllable-state';
+import { DialogName, createDialogContext } from './context';
 
 import type {
   ScopedProps,
   DialogContextValue,
   DialogProps,
   DialogContentElement,
-} from "./interface";
+} from './interface';
 
 const [DialogProvider, useDialogContext] =
   createDialogContext<DialogContextValue>(DialogName, {
-    dialogId: "",
+    dialogId: '',
     open: false,
     onOpenChange: (val: boolean) => {},
     onOpenToggle: () => {},

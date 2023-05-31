@@ -1,16 +1,17 @@
-import React from "react";
-import { Primitive } from "@radix-ui/react-primitive";
-import { Presence } from "@radix-ui/react-presence";
-import { DialogOverlayName, getState } from "./context";
-import { usePortalContext, usePresenceSub } from "./Portal";
-import { useDialogContext } from "./Root";
+import React from 'react';
+import { Primitive } from '@radix-ui/react-primitive';
+import { Presence } from '@radix-ui/react-presence';
+import { DialogOverlayName, getState } from './context';
+import { usePortalContext, usePresenceSub } from './Portal';
+import { useDialogContext } from './Root';
+
 import type {
   ScopedProps,
   DialogOverlayProps,
   DialogOverlayElement,
   DialogOverlayImplProps,
   DialogOverlayImplElement,
-} from "./interface";
+} from './interface';
 
 const DialogOverlayImpl = React.forwardRef<
   DialogOverlayImplElement,
@@ -26,7 +27,7 @@ const DialogOverlayImpl = React.forwardRef<
       data-state={getState(context.open)}
       {...overlayProps}
       ref={forwardedRef}
-      style={{ pointerEvents: "auto", ...overlayProps.style }}
+      style={{ pointerEvents: 'auto', ...overlayProps.style }}
     />
   );
 });

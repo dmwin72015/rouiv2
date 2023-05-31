@@ -1,6 +1,12 @@
-import React from "react";
-import { Portal as PortalPrimitive } from "@radix-ui/react-portal";
-import { useScrollLocker } from "@roui/lock-scroll";
+import React from 'react';
+import { Portal as PortalPrimitive } from '@radix-ui/react-portal';
+import { useScrollLocker } from '@roui/lock-scroll';
+import {
+  DialogPortalName,
+  createDialogContext,
+  DialogPresenceName,
+} from './context';
+import { useDialogContext } from './Root';
 
 import type {
   ScopedProps,
@@ -8,14 +14,7 @@ import type {
   DialogPortalProps,
   PresenceGroupContextValue,
   Scope,
-} from "./interface";
-
-import {
-  DialogPortalName,
-  createDialogContext,
-  DialogPresenceName,
-} from "./context";
-import { useDialogContext } from "./Root";
+} from './interface';
 
 const [PortalProvider, usePortalContext] =
   createDialogContext<PortalContextValue>(DialogPortalName, {
@@ -39,8 +38,7 @@ const PresenceGroup: React.FC<any> = (
   return (
     <PresenceProvider
       onSub={() => setCount((prev) => prev + 1)}
-      onUnSub={() => setCount((prev) => (prev == 0 ? 0 : prev - 1))}
-      count={count}
+      onUnSub={() => setCount((prev) => prev - 1)}
       scope={props.__scopeDialog}
     >
       {_open ? props.children : null}

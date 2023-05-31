@@ -1,12 +1,12 @@
-import type { Meta } from "@storybook/react";
-import { useState } from "react";
-import Dialog from "../src/Root";
-import "./demo.scss";
+import type { Meta } from '@storybook/react';
+import { useState } from 'react';
+import Dialog from '../src/Root';
+import './demo.scss';
 
-import DialogDemo from "./Dialog";
+import DialogDemo from './Dialog';
 
 const meta = {
-  title: "Dialog",
+  title: 'Dialog',
   component: Dialog,
 } satisfies Meta<typeof Dialog>;
 
@@ -39,11 +39,5 @@ export const ControllDemo = (props: any) => {
 //
 
 export const OriginDemo = () => {
-  const [open, setOpen] = useState<boolean>(false);
-
-  return (
-    <div>
-      <DialogDemo />
-    </div>
-  );
+  return <DialogDemo />;
 };
