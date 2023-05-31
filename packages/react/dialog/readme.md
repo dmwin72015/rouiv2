@@ -1,4 +1,9 @@
-1. 外面套一层 div ， 需要再 portal 中判断是否需要渲染的时候，
+> 来源 radix-ui/diloag
 
-   a. 有动画的情况，需要在动画结束的时候，判断是否需要渲染。
-   也就说 需要在 portal 判断， 渲染 dom 还是渲染 null
+### Installation
+
+$ yarn add @roui/dialog
+
+# or
+
+$ npm install @roui/dialog

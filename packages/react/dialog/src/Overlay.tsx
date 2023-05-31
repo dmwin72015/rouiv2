@@ -2,9 +2,8 @@ import React from "react";
 import { Primitive } from "@radix-ui/react-primitive";
 import { Presence } from "@radix-ui/react-presence";
 import { DialogOverlayName, getState } from "./context";
-import { usePortalContext } from "./Portal";
+import { usePortalContext, usePresenceSub } from "./Portal";
 import { useDialogContext } from "./Root";
-import { usePresenceSub } from "./Portal";
 import type {
   ScopedProps,
   DialogOverlayProps,
