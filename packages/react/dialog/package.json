@@ -27,6 +27,7 @@
     "@radix-ui/react-use-callback-ref": "^1.0.0",
     "@radix-ui/react-use-controllable-state": "^1.0.0",
     "@radix-ui/react-use-layout-effect": "^1.0.0",
+    "@roui/focus-guards": "workspace:^",
     "@roui/lock-scroll": "workspace:^"
   },
   "peerDependencies": {

@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 importers:
 
@@ -161,6 +165,9 @@ importers:
       '@radix-ui/react-use-layout-effect':
         specifier: ^1.0.0
         version: 1.0.0(react@18.2.0)
+      '@roui/focus-guards':
+        specifier: workspace:^
+        version: link:../focus-guards
       '@roui/lock-scroll':
         specifier: workspace:^
         version: link:../lock-scroll
@@ -170,6 +177,12 @@ importers:
       react-dom:
         specifier: ^18.0
         version: 18.2.0(react@18.2.0)
+
+  packages/react/focus-guards:
+    dependencies:
+      react:
+        specifier: ^18.0
+        version: 18.2.0
 
   packages/react/lock-scroll:
     dependencies:

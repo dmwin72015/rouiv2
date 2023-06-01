@@ -4,8 +4,7 @@ import { useComposedRefs } from '@radix-ui/react-compose-refs';
 import { DismissableLayer } from '@radix-ui/react-dismissable-layer';
 import { FocusScope } from '@radix-ui/react-focus-scope';
 import { Presence } from '@radix-ui/react-presence';
-import { useFocusGuards } from '@radix-ui/react-focus-guards';
-
+import { useFocusGuards } from '@roui/focus-guards';
 import type {
   ScopedProps,
   DialogContentProps,
@@ -34,7 +33,8 @@ const DialogContentModal = React.forwardRef<
     contentRef
   );
   usePresenceSub(DialogContentName, __scopeDialog);
-  useFocusGuards();
+
+  useFocusGuards(context.contentRef);
 
   return (
     <FocusScope
