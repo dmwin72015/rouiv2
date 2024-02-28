@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/dmwin72015/roui.git"
+    "url": "git+https://github.com/dmwin72015/rouiv2.git"
   },
   "homepage": "https://www.md7.top",
   "scripts": {
