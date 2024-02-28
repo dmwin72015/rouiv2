@@ -2,6 +2,15 @@
   "name": "@roui/focus-guards",
   "version": "1.0.0",
   "license": "MIT",
+  "author": {
+    "name": "dmwin72015",
+    "url": "http://www.md7.top"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/dmwin72015/roui2.git",
+    "directory": "packages/react/focus-guards"
+  },
   "source": "./src/index.ts",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
