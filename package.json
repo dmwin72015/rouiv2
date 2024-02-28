@@ -7,6 +7,15 @@
   "workspaces": [
     "packages/react/**/*"
   ],
+  "author": {
+    "name": "dmwin72015",
+    "url": "http://www.md7.top"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/dmwin72015/roui.git"
+  },
+  "homepage": "https://www.md7.top",
   "scripts": {
     "dev": "npm run storybook",
     "storybook": "storybook dev -p 6601",
@@ -15,7 +24,6 @@
     "build:packages": "parcel build 'packages/react/*' --no-cache",
     "build": "pnpm build:packages"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "clsx": "^1.2.1",

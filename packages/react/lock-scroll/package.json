@@ -1,6 +1,14 @@
 {
   "name": "@roui/lock-scroll",
   "version": "1.0.0",
+  "author": {
+    "name": "dmwin72015",
+    "url": "http://www.md7.top"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/dmwin72015/roui.git"
+  },
   "description": "react body lock scroll",
   "license": "MIT",
   "source": "./src/index.ts",
